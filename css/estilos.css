@@ -22,6 +22,66 @@ header nav .barra {
 .bg {
   background-color: #12130dff !important; }
 
+#footer {
+  padding: 3rem 1rem;
+  background-color: #12130dff;
+  color: #fff; }
+  #footer .container-lg .containerMain h6 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem; }
+  #footer .container-lg .containerMain p {
+    font-size: 1.2rem;
+    color: #f6f6ecff; }
+  #footer .container-lg .containerLinks .container {
+    margin-right: 2rem; }
+    #footer .container-lg .containerLinks .container .title {
+      font-size: 1.5rem;
+      margin-bottom: 3rem; }
+    #footer .container-lg .containerLinks .container div a {
+      font-size: 1rem;
+      color: #f6f6ecff;
+      margin-bottom: 1rem;
+      text-decoration: none; }
+      #footer .container-lg .containerLinks .container div a:hover {
+        color: #ccbc97ff; }
+  @media (max-width: 550px) {
+    #footer .container-lg {
+      flex-direction: column;
+      align-items: center; }
+      #footer .container-lg .containerMain {
+        text-align: center; }
+      #footer .container-lg .containerLinks {
+        justify-content: space-between;
+        width: 100%; }
+        #footer .container-lg .containerLinks .container:nth-child(2) {
+          text-align: end; } }
+
+#nosotros {
+  background-color: #e7e1c9ff; }
+  #nosotros .container-lg .row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  #nosotros .container-lg .row .textContainer div {
+    max-width: 400px; }
+    #nosotros .container-lg .row .textContainer div p {
+      font-size: 4rem;
+      text-align: center;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 3rem; }
+    #nosotros .container-lg .row .textContainer div h1 {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #12130dff;
+      margin-bottom: 2rem; }
+    #nosotros .container-lg .row .textContainer div button {
+      background-color: transparent;
+      border: none;
+      font-size: 1.3rem; }
+      #nosotros .container-lg .row .textContainer div button:hover {
+        text-decoration: underline; }
+
 #inicio {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(https://ciudaddemendoza.gob.ar/wp-content/uploads/2019/08/20-DSC_6731.jpg);
   background-position: center center;
@@ -58,3 +118,40 @@ header nav .barra {
     font-size: 8rem; }
   #inicio div button {
     font-size: 4rem; } }
+
+#preMapa {
+  background-color: #e7e1c9ff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 45vh; }
+  #preMapa h1 {
+    font-size: 3.5rem;
+    padding: 10px; }
+  #preMapa p {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: justify; }
+
+#mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  #mapa .obras {
+    background-color: #efede0ff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    #mapa .obras h2 {
+      text-align: center;
+      font-size: 4rem;
+      text-transform: uppercase;
+      padding: 20px 10px; }

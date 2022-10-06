@@ -12,15 +12,14 @@
       crossorigin="anonymous"
     />
     <!-- --------------------------------- CSS --------------------------------- -->
-    <link rel="stylesheet" href="./css/estilos.css" />
-
+    <link rel="stylesheet" href="../css/estilos.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav class="bg navbar bg navbar-expand-lg bg-light d-flex flex-column">
         <a class="navbar-brand" href="#"
-          ><img src="img/logo-museo-mendoza.svg" alt=""
+          ><img src="../img/logo-museo-mendoza.svg" alt=""
         /></a>
         <div class="container-fluid">
           <div
@@ -29,49 +28,90 @@
           >
             <div class="barra navbar-nav">
               <a class="nav-link" href="#">Inicio</a>
-              <a class="nav-link" href="pages/mapa.html">Mapa Virtual</a>
+              <a class="nav-link" href="#">Mapa Virtual</a>
               <a class="nav-link" href="#">Recorrido Guiado</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
-      <section id="inicio">
-        <div>
-          <h1>Bienvenidos al Museo de Mendoza</h1>
-          <a href="#nosotros"><button>Conocenos</button></a>
-        </div>
+      <section id="preMapa">
+        <h1>Recorrido Virtual</h1>
+        <p>
+          Accede a todas las obras y su informacion como si estuvieses en el
+          museo. Proba esta nueva experiencia
+        </p>
       </section>
-      <section id="nosotros">
-        <div class="container-lg">
-          <div class="row">
-            <div
-              class="textContainer d-flex justify-content-center align-items-center col-md-6 col-12 p-5"
+      <section id="mapa">
+        <div class="mapita">
+          <img class="img-fluid" src="../img/Plano1.jpg" alt="" />
+        </div>
+        <div class="obras">
+          <h2>Obras</h2>
+          <div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
             >
-              <div
-                class="d-flex justify-content-center align-items-center flex-column"
-              >
-                <p>Bienvenido al Museo mas grande e historico de Mendoza</p>
-                <h1 class="text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ullam animi velit id perspiciatis totam,
-                </h1>
-                <button
-                  class="d-flex justify-content-center align-items-center"
-                >
-                  <span class="me-2">More about</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
+              Pijama de san martin
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Pijama de san martin
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-fluid"src="../img/nosotros.jpg" alt="">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+                    eveniet eaque quia, corrupti accusamus explicabo! Voluptate
+                    alias fugit nesciunt autem at? Quam beatae aliquam iste,
+                    ipsam ab veritatis nemo facilis sunt est magnam placeat
+                    minus quasi voluptate earum accusantium quis laborum
+                    repellat quibusdam quidem officiis fugit aliquid? Minus,
+                    consectetur? Quidem.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                    <!-- <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button> -->
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="p-0 col-md-6 col-12">
-              <img src="./img/nosotros.jpg" class="w-100" alt="" />
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer id="footer">
       <div class="container-lg d-flex justify-content-between">
         <div class="containerMain">
@@ -86,9 +126,9 @@
           <div class="container">
             <p class="title">Links</p>
             <div class="d-flex flex-column">
-              <a href="#">Inicio</a>
+              <a href="../index.html">Inicio</a>
               <a href="#">Visita virtual</a>
-              <a href="./pages/mapa.html">Mapa virtual</a>
+              <a href="#">Mapa virtual</a>
             </div>
           </div>
           <div class="container">

@@ -1,0 +1,41 @@
+
+#nosotros{
+    background-color: $crema;
+    .container-lg{
+        .row{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .textContainer{
+                div{
+                    max-width: 400px;
+                    p{
+                        font-size: 4rem;
+                        text-align: center;
+                        font-weight: 600;
+                        line-height: 120%;
+                        margin-bottom: 3rem;
+                    }
+
+                    h1{
+                        font-size: 2rem;
+                        font-weight: 300;
+                        color: $chocolate;
+                        margin-bottom: 2rem;
+                    }
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        font-size: 1.3rem;
+                        &:hover{
+                           text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
