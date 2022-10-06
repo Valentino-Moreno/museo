@@ -1,0 +1,22 @@
+@import "../base/color";
+header{ 
+    nav{
+        img{
+            height: 100px;
+        }
+        .barra{
+            text-align: center;
+            a{
+                font-size: 2.2rem;
+                color: $cremita;
+                &:hover{
+                    color: $crema-blanca;
+                }
+            }
+        }
+    }
+}
+
+.bg{
+    background-color: $chocolate !important;
+}
