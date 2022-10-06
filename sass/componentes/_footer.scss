@@ -1,0 +1,64 @@
+#footer{
+    padding: 3rem 1rem;
+    background-color: $chocolate;
+    color: #fff;
+
+    .container-lg{
+        
+        .containerMain{
+            h6{
+                font-size: 2.5rem;
+                margin-bottom: 3rem;
+            }
+    
+            p{
+                font-size: 1.2rem;
+                color: $crema-blanca;
+            }
+        }
+    
+        .containerLinks{
+            .container{
+                margin-right: 2rem;
+                
+                .title{
+                    font-size: 1.5rem;
+                    margin-bottom: 3rem;
+                }
+    
+                div{
+                    a{
+                        font-size: 1rem;
+                        color: $crema-blanca;
+                        margin-bottom: 1rem;
+                        text-decoration: none;
+                        &:hover{
+                            color: $marroncito;
+                        }
+                    }
+                }
+    
+    
+            }
+        }
+
+        @media (max-width: 550px) {
+            flex-direction: column;
+            align-items: center;
+            .containerMain{
+                text-align: center;
+            }
+
+            .containerLinks{
+                justify-content: space-between;
+                width: 100%;
+                .container{
+                    &:nth-child(2){
+                        text-align: end;
+                    }
+                }
+            }
+        }
+    }
+
+}
