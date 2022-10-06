@@ -3,4 +3,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Abyssinica SIL', serif; }
+  font-family: "Abyssinica SIL", serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
