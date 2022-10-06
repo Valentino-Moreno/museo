@@ -54,6 +54,17 @@
             text-transform: uppercase;
             padding: 20px 10px;
         }
+        button{
+            background-color: $chocolate;
+            border: none;
+            font-size: 2rem;
+            color: $marroncito;
+            &:hover{
+                background-color: $marroncito;
+                color: $chocolate;
+                border: 2px solid $chocolate;
+            }
+        }
     }
 
     .modalLoader{
@@ -107,17 +118,6 @@
                 font-size: 4rem;
                 text-transform: uppercase;
                 padding: 20px 10px;
-            }
-            button{
-                background-color: $chocolate;
-                border: none;
-                font-size: 2rem;
-                color: $marroncito;
-                &:hover{
-                    background-color: $marroncito;
-                    color: $chocolate;
-                    border: 2px solid $chocolate;
-                }
             }
         }
 
