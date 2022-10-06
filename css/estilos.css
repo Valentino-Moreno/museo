@@ -247,6 +247,30 @@ header nav .barra a:hover {
     text-transform: uppercase;
     padding: 20px 10px;
   }
+  #mapa .obras button {
+    background-color: #12130d;
+    border: none;
+    font-size: 2rem;
+    color: #ccbc97;
+  }
+  #mapa .obras button:hover {
+    background-color: #ccbc97;
+    color: #12130d;
+    border: 2px solid #12130d;
+  }
+  #mapa .modal-body #modalDesc {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    align-self: flex-start;
+  }
+  #mapa .modal-body .item {
+    font-size: 1.5rem;
+    align-self: flex-start;
+  }
+  #mapa .modal-body .item span {
+    font-weight: 600;
+    color: #ccbc97;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

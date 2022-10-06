@@ -108,6 +108,38 @@
                 text-transform: uppercase;
                 padding: 20px 10px;
             }
+            button{
+                background-color: $chocolate;
+                border: none;
+                font-size: 2rem;
+                color: $marroncito;
+                &:hover{
+                    background-color: $marroncito;
+                    color: $chocolate;
+                    border: 2px solid $chocolate;
+                }
+            }
+        }
+
+        .modal-body{
+
+            #modalDesc{
+                margin-top: 2rem;
+                font-size: 1.3rem;
+                align-self: flex-start;
+
+            }
+            
+            .item{
+                font-size: 1.5rem;
+                align-self: flex-start;
+                span{
+                    font-weight: 600;
+                    color: $marroncito;
+                }
+
+            }
         }
     }
+    
 }

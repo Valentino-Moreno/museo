@@ -2,6 +2,9 @@ const buttons = document.querySelectorAll('.buttonGet')
 const modalTitle = document.querySelector('#modalTitle')
 const modalImg = document.querySelector('#modalImg')
 const modalDesc = document.querySelector('#modalDesc')
+const modalAutor = document.querySelector('#modalAutor')
+const modalExpo = document.querySelector('#modalExpo')
+const modalUbi = document.querySelector('#modalUbi')
 const modalBg = document.querySelector('#modalBg')
 
 const exposiciones = [
@@ -59,8 +62,8 @@ const getData = async (num) => {
                 titulo: data.name,
                 descripcion: data.url,
                 autor: data.gender,
-                ubicación: data.species,
-                exposición: data.status,
+                ubicacion: data.species,
+                exposicion: data.status,
                 imagen: data.image,
             }
             createModal(newObject)
@@ -71,6 +74,9 @@ const getData = async (num) => {
 const createModal = (obj) => {
     modalTitle.textContent = obj.titulo
     modalDesc.textContent = obj.descripcion
+    modalAutor.textContent = obj.autor
+    modalExpo.textContent = obj.exposicion
+    modalUbi.textContent = obj.ubicacion
     modalImg.src = obj.imagen
 }
 
