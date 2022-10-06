@@ -1,20 +1,19 @@
 @import "../base/color";
 #inicio{
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(https://upload.wikimedia.org/wikipedia/commons/d/d1/Jos%C3%A9_de_San_Mart%C3%ADn_%28retrato%2C_c.1828%29.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(https://ciudaddemendoza.gob.ar/wp-content/uploads/2019/08/20-DSC_6731.jpg);
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat ;
-    height: 500px;
+    background-repeat: no-repeat;
+    padding: 170px 10px 200px 10px;
     div{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         align-content: center;
-        padding: 200px 10px 10px 10px;
         h1{
             color: $cremita;
-            font-size: 3rem;
+            font-size: 3.6rem;
             text-align: center;
         }
         button{
@@ -24,7 +23,29 @@
             font-size: 2rem;
             padding: 10px;
             border: none;
-            color: $crema
+            color: $crema;
+            transition: all 0.5s;
+            &:hover{
+                transform: translateY(-5px);
+                background-color: $crema;
+                color: $chocolate;
+                // border: 3px solid $chocolate;
+            }
         }
+    }
+}
+
+@media (min-width: 1024px){
+    #inicio{
+        div{
+            h1{
+                padding: 0px 40px;
+                font-size: 8rem;
+            }
+            button{
+                font-size: 4rem;
+            }
+        }
+        
     }
 }
