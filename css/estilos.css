@@ -23,21 +23,20 @@ header nav .barra {
   background-color: #12130dff !important; }
 
 #inicio {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/d/d1/Jos%C3%A9_de_San_Mart%C3%ADn_%28retrato%2C_c.1828%29.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(https://ciudaddemendoza.gob.ar/wp-content/uploads/2019/08/20-DSC_6731.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh; }
+  padding: 170px 10px 200px 10px; }
   #inicio div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    padding: 200px 10px 10px 10px; }
+    align-content: center; }
     #inicio div h1 {
       color: #efede0ff;
-      font-size: 3rem;
+      font-size: 3.6rem;
       text-align: center; }
     #inicio div button {
       margin-top: 20px;
@@ -46,4 +45,16 @@ header nav .barra {
       font-size: 2rem;
       padding: 10px;
       border: none;
-      color: #e7e1c9ff; }
+      color: #e7e1c9ff;
+      transition: all 0.5s; }
+      #inicio div button:hover {
+        transform: translateY(-5px);
+        background-color: #e7e1c9ff;
+        color: #12130dff; }
+
+@media (min-width: 1024px) {
+  #inicio div h1 {
+    padding: 0px 40px;
+    font-size: 8rem; }
+  #inicio div button {
+    font-size: 4rem; } }
