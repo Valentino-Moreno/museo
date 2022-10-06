@@ -7,3 +7,43 @@
 
 html {
   font-size: 10px; }
+
+header nav img {
+  height: 100px; }
+
+header nav .barra {
+  text-align: center; }
+  header nav .barra a {
+    font-size: 2.2rem;
+    color: #efede0ff; }
+    header nav .barra a:hover {
+      color: #f6f6ecff; }
+
+.bg {
+  background-color: #12130dff !important; }
+
+#inicio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/d/d1/Jos%C3%A9_de_San_Mart%C3%ADn_%28retrato%2C_c.1828%29.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh; }
+  #inicio div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 200px 10px 10px 10px; }
+    #inicio div h1 {
+      color: #efede0ff;
+      font-size: 3rem;
+      text-align: center; }
+    #inicio div button {
+      margin-top: 20px;
+      background-color: #12130dff;
+      border-radius: 15px;
+      font-size: 2rem;
+      padding: 10px;
+      border: none;
+      color: #e7e1c9ff; }

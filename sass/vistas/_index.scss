@@ -1,0 +1,30 @@
+@import "../base/color";
+#inicio{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(https://upload.wikimedia.org/wikipedia/commons/d/d1/Jos%C3%A9_de_San_Mart%C3%ADn_%28retrato%2C_c.1828%29.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    height: 90vh;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 200px 10px 10px 10px;
+        h1{
+            color: $cremita;
+            font-size: 3rem;
+            text-align: center;
+        }
+        button{
+            margin-top: 20px;
+            background-color: $chocolate;
+            border-radius: 15px;
+            font-size: 2rem;
+            padding: 10px;
+            border: none;
+            color: $crema
+        }
+    }
+}
