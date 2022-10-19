@@ -9,36 +9,68 @@ const modalBg = document.querySelector('#modalBg')
 
 const exposiciones = [
     {
-        título: "San Martin",
-        descripción: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
+        name: "San Martin",
+        descripcion: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
         autor: "SMG",
-        ubicación: "sala 1",
-        exposición: "asdasdasd",
+        ubicacion: "sala 1",
+        exposicion: "asdasdasd",
         imagen: "../img/Plano1.jpg",
     },
     {
-        título: "San Martin",
-        descripción: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
+        name: "San Martin",
+        descripcion: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
         autor: "SMG",
-        ubicación: "sala 1",
-        exposición: "asdasdasd",
-        imagen: "../img/Plano1.jpg",
+        ubicacion: "sala 1",
+        exposicion: "asdasdasd",
+        imagen: "../img/img1.jpg",
     },
     {
-        título: "San Martin",
-        descripción: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
+        name: "San Martin",
+        descripcion: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
         autor: "SMG",
-        ubicación: "sala 1",
-        exposición: "asdasdasd",
-        imagen: "../img/Plano1.jpg",
+        ubicacion: "sala 1",
+        exposicion: "asdasdasd",
+        imagen: "../img/img2.jpg",
     },
     {
-        título: "San Martin",
-        descripción: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
+        name: "San Martin",
+        descripcion: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
         autor: "SMG",
-        ubicación: "sala 1",
-        exposición: "asdasdasd",
-        imagen: "../img/Plano1.jpg",
+        ubicacion: "sala 1",
+        exposicion: "asdasdasd",
+        imagen: "../img/img3.jpg",
+    },
+    {
+        name: "San Martin",
+        descripcion: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
+        autor: "SMG",
+        ubicacion: "sala 1",
+        exposicion: "asdasdasd",
+        imagen: "../img/img4.jpg",
+    },
+    {
+        name: "San Martin",
+        descripcion: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
+        autor: "SMG",
+        ubicacion: "sala 1",
+        exposicion: "asdasdasd",
+        imagen: "../img/img5.jpg",
+    },
+    {
+        name: "San Martin",
+        descripcion: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
+        autor: "SMG",
+        ubicacion: "sala 1",
+        exposicion: "asdasdasd",
+        imagen: "../img/img6.jpg",
+    },
+    {
+        name: "San Martin",
+        descripcion: "lortem asdmasd dfjksand fosnfeifj weopifnw3 efo 2ó34f aerjw",
+        autor: "SMG",
+        ubicacion: "sala 1",
+        exposicion: "asdasdasd",
+        imagen: "../img/img7.jpg",
     },
 ]
 
@@ -47,9 +79,21 @@ buttons.forEach(btn => {
     btn.addEventListener('click', () => {
         const id = btn.dataset.id
         console.log(id)
-        getData(id)
+        getData2(id)
     })
 })
+
+const getData2 = async (num) => {
+    const newObject = {
+        titulo: exposiciones[num].name,
+        descripcion: exposiciones[num].descripcion,
+        autor: exposiciones[num].autor,
+        ubicacion: exposiciones[num].ubicacion,
+        exposicion: exposiciones[num].exposicion,
+        imagen: exposiciones[num].imagen,
+    }
+    createModal(newObject)
+}
 
 const getData = async (num) => {
     modalBg.classList.add('active')
